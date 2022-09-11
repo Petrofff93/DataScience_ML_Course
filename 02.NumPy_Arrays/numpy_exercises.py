@@ -65,5 +65,3 @@ result2 = matrix5.std()
 # Get the sum of all the columns in matrix5
 # We could specify an axis in order to get the wanted res
 result3 = matrix5.sum(axis=0)
-
-

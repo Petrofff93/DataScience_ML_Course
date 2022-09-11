@@ -6,11 +6,10 @@ Don’t worry about edge cases like a punctuation being attached to the word dog
 
 def find_dog(example):
     for item in example.split():
-        if item == 'dog':
+        if item == "dog":
             return True
     return False
 
 
-test_str = 'Is there a dog here?'
+test_str = "Is there a dog here?"
 print(find_dog(test_str))
-

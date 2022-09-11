@@ -9,26 +9,22 @@ your speed can be 5 higher in all cases. **
 
 
 def caught_speeding(speed, is_birthday):
-    speed_cases = {
-        'No ticket': [60],
-        'Small ticket': [61, 80],
-        'Big ticket': [81]
-    }
+    speed_cases = {"No ticket": [60], "Small ticket": [61, 80], "Big ticket": [81]}
 
     if is_birthday:
         for key, value in speed_cases.items():
             speed_cases[key] = [x + 5 for x in value]
 
     for k, v in speed_cases.items():
-        if k == 'No ticket':
+        if k == "No ticket":
             if speed <= v[0]:
                 return k
 
-        elif k == 'Small ticket':
+        elif k == "Small ticket":
             if v[0] <= speed <= v[1]:
                 return k
 
-        elif k == 'Big ticket':
+        elif k == "Big ticket":
             return k
 
 

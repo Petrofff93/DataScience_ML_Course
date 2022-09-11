@@ -8,12 +8,12 @@ def get_domain(some_str):
     idx = 0
 
     for i in range(len(some_str)):
-        if some_str[i] == '@':
+        if some_str[i] == "@":
             idx = i
             break
 
-    return some_str[idx + 1:]
+    return some_str[idx + 1 :]
 
 
-example_string = 'user@domain.com'
+example_string = "user@domain.com"
 print(get_domain(example_string))
